@@ -1,5 +1,5 @@
 const copyButtons = document.querySelectorAll("[data-copy-target]");
-const statusLabel = document.querySelector(".copy-status");
+const toast = document.querySelector(".toast");
 
 async function copyText(targetId) {
   const target = document.getElementById(targetId);
@@ -9,22 +9,23 @@ async function copyText(targetId) {
 
   try {
     await navigator.clipboard.writeText(text);
-    showStatus("コピーしました");
+    showToast("プロンプトをコピーしました");
   } catch {
     target.focus();
     target.select();
     document.execCommand("copy");
-    showStatus("コピーしました");
+    showToast("プロンプトをコピーしました");
   }
 }
 
-function showStatus(message) {
-  if (!statusLabel) return;
-  statusLabel.textContent = message;
-  window.clearTimeout(showStatus.timer);
-  showStatus.timer = window.setTimeout(() => {
-    statusLabel.textContent = "";
-  }, 2400);
+function showToast(message) {
+  if (!toast) return;
+  toast.textContent = message;
+  toast.classList.add("is-visible");
+  window.clearTimeout(showToast.timer);
+  showToast.timer = window.setTimeout(() => {
+    toast.classList.remove("is-visible");
+  }, 2200);
 }
 
 copyButtons.forEach((button) => {
