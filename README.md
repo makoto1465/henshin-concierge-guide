@@ -1,6 +1,6 @@
 # Henshin Concierge Guide
 
-MCT / フォルトゥーナ特典向けの「返信コンシェルジュ」案内ページです。
+M-CITY / ForTunaファミリー特典向けの「返信コンシェルジュ」案内ページです。
 
 ## 内容
 
