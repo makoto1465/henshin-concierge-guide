@@ -2660,3 +2660,68 @@ textarea#promptText {
 .hero-proof span {
   color: #a9b8ce !important;
 }
+
+/* Contrast fixes: light mock UI surfaces need dark text, dark data panels need light text. */
+.before-chat p,
+.mini-chat,
+.calendar-card,
+.post-card,
+.comment-card,
+.mail-window,
+.mail-window span,
+.settings-list span,
+.settings-list strong,
+.share-options span,
+.share-options strong,
+.paste-box,
+.mock-sidebar span,
+.mock-main p,
+.mock-main strong,
+.input-line,
+.field-label,
+.toggle-row,
+.line-message,
+.answer-bubble {
+  color: #102033 !important;
+}
+
+.mini-chat.answer,
+.settings-list strong,
+.share-options strong,
+.toggle-row.active {
+  color: #063d32 !important;
+}
+
+.db-visual strong,
+.db-visual span,
+.answer-card strong,
+.answer-card p,
+.muted-card strong,
+.muted-card p {
+  color: #dbeafe !important;
+}
+
+.db-visual div,
+.answer-card,
+.muted-card {
+  background: rgba(15, 31, 57, 0.92) !important;
+}
+
+.textarea-visual,
+.memory-mock p,
+.mock-screen p {
+  color: #dbeafe !important;
+}
+
+.chatgpt-mock .mock-main strong,
+.chatgpt-mock .mock-main p,
+.project-name-mock .field-label,
+.memory-mock .toggle-row span,
+.memory-mock .toggle-row strong {
+  color: #dbeafe !important;
+}
+
+.chatgpt-mock .mock-sidebar span,
+.chatgpt-mock .mock-sidebar .selected {
+  color: #102033 !important;
+}
