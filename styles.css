@@ -2707,6 +2707,18 @@ textarea#promptText {
   background: rgba(15, 31, 57, 0.92) !important;
 }
 
+.line-panel pre,
+.line-panel code {
+  color: #dbeafe !important;
+}
+
+.line-notes p {
+  border-color: #10b981 !important;
+  background: #10233d !important;
+  color: #f8fbff !important;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
+}
+
 .textarea-visual,
 .memory-mock p,
 .mock-screen p {
